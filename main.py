@@ -46,6 +46,7 @@ logging.basicConfig(
 )
 
 def exception_handling(func):
+    # to include any exceptions in the ETL framework process
     def wrapperfunction():
         try:
             print(x)
@@ -58,6 +59,7 @@ def exception_handling(func):
 
 
 def loggingtest(func):
+    # to log any issues after each step of the ETL framwork process
     def wrapperfunction():
         logging.debug('This is a debug message')
         logging.info('This is an info message')
